@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    cursor: url(assets/mouse.png),auto;
+    list-style-type: none;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+button,a,.logo,i{
+    cursor: url(assets/mouse-2588421.png),auto;
+}
+a:hover{
+    color: #B191FF;
+}
