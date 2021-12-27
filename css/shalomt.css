@@ -132,28 +132,35 @@ p.serv_colhead{
 }
 .develop,.support{
     width: 45%;
-    color: #E7D7C1;
+    color: #e4c465;
     text-align: center;
-    border: 1px solid #E7D7C1;
+    border: 1px solid #242F40;
     margin: 50px 30px;
-    padding: 120px 20px;
+    padding: 10px 20px;
     font-weight: bold;
 
 }
-
+.develop{
+    background-image: url(/assets/skills_column.jpg);
+}
+.support{
+    background-image: url(/assets/skills_column.jpg);
+}
+.ts,.wpdev{
+    background-color: rgba(202, 202, 202, 0.623);
+    padding: 120px 20px;
+    width: 100%;
+}
 .serv_title{
     width: 40%;
     text-align: center;
 }
 .s_col1{
     display: flex;
-    background: rgba(32, 32, 32, 0.8); /* Black see-through */
-
 }
 .s_bg{ 
     width: 60%;
-    background: url(/assets/skills_column.jpg) no-repeat;
-    background-position: center;
+
     padding: 20px;
 }
 /* Skills */
@@ -168,26 +175,6 @@ p.serv_colhead{
 .people{
     width: 50%;
 }
-progress{
-    width: 70%;
-    height: 8px;
-    background-color: #B191FF;
-}
-progress::-webkit-progress-bar {
-    /* style rules */
-    background-color: #E7D7C1;
-}
-progress::-webkit-progress-value {
-    /* style rules */
-    background-color: #551ee0;
-}
-progress::-moz-progress-bar {
-    /* style rules */
-    background-color: #E7D7C1;
-}
-progress::-moz-progress-value{
-    background-color: #551ee0;
-}
 .people_skills_li > ul{
     padding: 0;
     columns: 2;
@@ -199,4 +186,30 @@ progress::-moz-progress-value{
 .prof_skills,.people_skills{
     padding-bottom: 20px;
     color: #E7D7C1;
+}
+.meter { 
+    height: 5px;
+    position: relative;
+    background: #e4c465;
+    overflow: hidden;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: #471ead;
+}
+
+.progress_anim{
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+@keyframes progressBar {
+0% { width: 0; }
+    100% { width: 100%; }
 }
