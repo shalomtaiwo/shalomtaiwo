@@ -16,3 +16,9 @@ button,a,.logo,i{
 a:hover{
     color: #B191FF;
 }
+header{
+    z-index: 1;
+}
+main{
+    z-index: 0;
+}
