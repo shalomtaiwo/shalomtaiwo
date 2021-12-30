@@ -13,6 +13,9 @@ body{
 button,a,.logo,i{
     cursor: url(assets/mouse-2588421.png),auto;
 }
+input,textarea{
+    cursor: pointer;
+}
 a:hover{
     color: #B191FF;
 }
