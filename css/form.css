@@ -21,7 +21,7 @@
 .contact_options p{
     padding: 25px 0;
     border: 1px solid white;
-    margin: 20px 15px;
+    margin: 20px 15px 20px 0;
     cursor: default;
     display: flex;
     flex-direction:column;
