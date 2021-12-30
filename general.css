@@ -15,6 +15,10 @@ button,a,.logo,i{
 }
 input,textarea{
     cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    width: 100%;
 }
 a:hover{
     color: #B191FF;
