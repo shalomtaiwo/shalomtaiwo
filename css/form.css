@@ -1,0 +1,23 @@
+.hidden{
+    display: none;
+}
+.contact_details{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 120px;
+    flex-direction: row;
+    align-items: center;
+}
+.contact_options{
+    width: 40%;
+}
+.contact_form{
+    width: 60%;
+}
+#my-form label{
+    display: flex;
+    flex-direction: column;
+}
+label input, label textarea{
+    width: 100%;
+}
