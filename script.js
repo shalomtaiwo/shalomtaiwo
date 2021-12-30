@@ -10,3 +10,19 @@ document.addEventListener('scroll', function (e) {
        document.getElementById('anim_p_5').classList.add('progress_anim');
      }
   });
+
+
+  document.querySelector("form").addEventListener("submit", handleSubmit);
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    let myForm = document.getElementById('my-form');
+    let formData = new FormData(myForm)
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+      alert(error))
+  }
+  
