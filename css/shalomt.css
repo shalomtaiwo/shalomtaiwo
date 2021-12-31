@@ -213,3 +213,12 @@ p.serv_colhead{
 0% { width: 0; }
     100% { width: 100%; }
 }
+.subscribe{
+    background-color: #242F40;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.subs_form{
+    width: 45%;
+}

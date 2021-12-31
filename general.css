@@ -37,3 +37,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.email-marketing-by-b{
+    display: none !important;
+    visibility: hidden !important;
+}
