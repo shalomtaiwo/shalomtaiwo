@@ -1,0 +1,50 @@
+.plugin_section{
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    padding: 60px 30px 60px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.wbps_page{
+    width: 60%;
+}
+.wbps_h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: blanchedalmond;
+    background-color: #B191FF;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+.wbps_logo{
+    width: 25%;
+    padding-top: 30px;
+}
+.wbps_logo_ img{
+    width: 80%;
+}
+.wbps_desc{
+    padding-bottom: 40px;
+}
+.wbps_links{
+    display: flex;
+}
+.wbps_links button{
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    border: none;
+    border-radius: 4px;
+}
+.wbps_doc_link1{
+    background-color: #A26769;
+    color: white;
+}
+.wbps_doc_link2{
+    background-color: #242F40;
+    color: white;
+}
+.wbps_doc_link2 > a {
+    color: white;
+    text-decoration: none;
+}

@@ -19,6 +19,7 @@ input,textarea{
     color: black;
     border: none;
     width: 100%;
+    border-radius: 4px;
 }
 a:hover{
     color: #B191FF;
