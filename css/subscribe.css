@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext);
+
+*{font-family: 'Josefin Sans', sans-serif;}
+*:focus{outline:0;}
+
+.subs-button{
+	background-color:#80A4ED;
+	border:0;
+	padding:10px 0px;
+	width:90px;
+	color:white;
+	cursor:pointer;
+	position:relative;
+	transition:0.4s all;
+}
+
+.subs-input{
+	border:0;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.4);
+	padding:10px 20px;
+	width:165px;
+	transition: 0.3s width cubic-bezier(0.40, 0, 0.50, 1.30);
+
+}
+
+.subs-input + .subs-button{
+	margin-left:5px;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.subs-button:after{
+    content:'';
+    width: 100%;
+    height: 0;
+	position:absolute;
+	top:50%;
+	left:0;
+    background: rgba(255,255,255,0.3);
+    opacity: 0;
+	transition:0.2s all;
+}
+
+.subs-button:hover:after{
+	line-height:36px;
+		top:0;
+	 height: 100%;
+    opacity: 1;
+}
+
+.subs-button.iconize:hover:after{
+    opacity: 0;
+}
+
+.subs-label{
+	border:0;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.4);
+	padding:10px 13px 7px;
+	vertical-align:middle;
+	margin-right:-5px;
+	background:white;
+}
+
+.subs-input:focus{
+	width:250px;
+}
+
+.green{
+	color:#B191FF !important;
+}
+
+.subs-wrapper{
+	width:100%;
+	text-align:Center;
+}
+
+.x1p4{
+	zoom:1.4;
+}
+
+@-moz-keyframes spin { 0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin { 0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); } }
+@-ms-keyframes spin { 0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); } }
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); } }
+.ion-loading-a { -webkit-animation-timing-function: steps(8, start); -moz-animation-timing-function: steps(8, start); animation-timing-function: steps(8, start); }
+
+
+.spin{
+	    animation: spin 1s infinite linear;
+}
+
+.iconize{
+	width:40px;
+}

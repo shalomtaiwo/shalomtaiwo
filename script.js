@@ -26,3 +26,26 @@ document.addEventListener('scroll', function (e) {
       alert(error))
   }
   
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    let subForm = document.getElementById('subs-form');
+    let formData = new FormData(subForm)
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+      alert(error))
+  }
+
+
+
+  $('subs-button').click(function(){
+    $('subs-button').html('<i class="ionicons ion-load-c spin"></i>');
+    $('subs-button').addClass("iconize");
+    $('subs-input').attr("disabled", "true");
+    setTimeout(function(){
+    $('subs-button').html('<i class="ionicons ion-checkmark"></i>');
+    }, 1000);
+  });
