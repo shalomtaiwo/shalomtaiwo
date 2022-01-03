@@ -27,19 +27,6 @@ document.addEventListener('scroll', function (e) {
   }
   
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    let subForm = document.getElementById('subs-form');
-    let formData = new FormData(subForm)
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) =>
-      alert(error))
-  }
-
-
 
   $('subs-button').click(function(){
     $('subs-button').html('<i class="ionicons ion-load-c spin"></i>');
