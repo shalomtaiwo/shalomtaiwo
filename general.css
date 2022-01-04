@@ -9,10 +9,12 @@
 }
 html {
     scroll-behavior: smooth;
+    
   }
 body{
     height: 100%;
-    width: 100vw;
+    width: auto;
+    overflow-x: hidden;
 }
 button,a,.logo,i{
     cursor: pointer;
@@ -36,6 +38,7 @@ main{
 }
 footer{
     height: 12vh;
+    width: 100%;
     background-color: #80A4ED;
     display: flex;
     align-items: center;

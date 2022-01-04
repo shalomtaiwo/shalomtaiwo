@@ -34,63 +34,45 @@
 /* Logo */
 @media only screen and (min-width: 750px) {
 
-.nav_logo{
-    position: absolute;
-    left: 15;
-}
-.logo{
-    height: 50px;
-}
-/* Nav */
-header{
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    color: whitesmoke;
-    height: 80px;
-    padding: 15px 15px;
-    background-color: #242F40;
-    top: 0;
-}
-.header{
-    position: relative;
-    padding: 15px 0;
-    height: 80px;
-    background-color: #242F40;
-    width: 100vw;
 
-}
 
-nav > ul{
-    display: inline-flex;
-}
-nav > ul > li{
-    padding: 0 20px;
-}
-nav{
-    position: absolute;
-    right: 0;
-    padding-top: 10px;
-}
-nav > ul > li > a{
-    text-decoration: none;
-    color: #E7D7C1;
-}
-/* Button */
-nav > ul > li > a > button{
-    padding: 10px;
-    margin-top: -15px;
-    color: #242F40;
-    background-color: #80A4ED;
-    border: none;
-    border-radius: 5px;
-}
-nav > ul > li > a > button:hover{
-    background-color: #B191FF;
-}
-.mobile_menu{
-    display: none;
-}
+    .desktop_menu{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    /* Nav */
+    header{
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        color: whitesmoke;
+        height: 115px;
+        padding: 15px 15px;
+        background-color: #242F40;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+    }
+    .header{
+        position: relative;
+        padding: 15px 0;
+        height: 115px;
+        background-color: #242F40;
+    
+    }
+    nav > ul.mobile_menu {
+        display: flex;
+    }
+    nav > ul.mobile_menu > li > a {
+        text-decoration: none;
+        color: white;
+    }
+    nav > ul.mobile_menu > li{
+        padding: 0 10px;
+    }
 }
 @media only screen and (max-width: 749px) {
 
