@@ -498,7 +498,7 @@ p.serv_colhead{
         }
         .people_skills_li > ul{
             padding: 0;
-            columns: 2;
+            columns: 1;
         }
         .people_skills_li > ul > li{
             padding: 20px 0;
@@ -507,7 +507,7 @@ p.serv_colhead{
         .prof_skills,.people_skills{
             padding-bottom: 20px;
             color: #E7D7C1;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
         }
         .meter { 
             height: 5px;
