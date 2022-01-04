@@ -545,4 +545,7 @@ p.serv_colhead{
             width: 45%;
         }
         }
-    
+        .copyright{
+            text-align: center;
+            font-size: 15px;
+        } 

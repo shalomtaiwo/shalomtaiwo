@@ -327,7 +327,7 @@ p button{
     #my-form p{
         display: flex;
         flex-direction: column;
-        padding: 15px;
+        padding: 5px;
     }
     label input{
         height: 40px;
@@ -397,7 +397,7 @@ p button{
         #my-form p{
             display: flex;
             flex-direction: column;
-            padding: 05px;
+            padding: 5px;
         }
         label input{
             height: 40px;
