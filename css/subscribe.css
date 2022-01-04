@@ -77,4 +77,15 @@
     font-weight: lighter;
     text-align: center;
     color: ghostwhite;
+    padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 663px) {
+    #subs-bg > div > h1{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        text-align: center;
+        color: ghostwhite;
+        padding-bottom: 25px;
+    }
 }
