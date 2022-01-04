@@ -32,6 +32,8 @@
 }
 /******************** Header *******************/
 /* Logo */
+@media only screen and (min-width: 750px) {
+
 .nav_logo{
     position: absolute;
     left: 15;
@@ -41,7 +43,7 @@
 }
 /* Nav */
 header{
-    width: 100%;
+    width: 100vw;
     position: fixed;
     display: flex;
     color: whitesmoke;
@@ -55,6 +57,7 @@ header{
     padding: 15px 0;
     height: 80px;
     background-color: #242F40;
+    width: 100vw;
 
 }
 
@@ -85,7 +88,53 @@ nav > ul > li > a > button{
 nav > ul > li > a > button:hover{
     background-color: #B191FF;
 }
+.mobile_menu{
+    display: none;
+}
+}
+@media only screen and (max-width: 749px) {
+
+
+    .desktop_menu{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    /* Nav */
+    header{
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        color: whitesmoke;
+        height: 115px;
+        padding: 15px 15px;
+        background-color: #242F40;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+    }
+    .header{
+        position: relative;
+        padding: 15px 0;
+        height: 115px;
+        background-color: #242F40;
+    
+    }
+    nav > ul.mobile_menu {
+        display: flex;
+    }
+    nav > ul.mobile_menu > li > a {
+        text-decoration: none;
+        color: white;
+    }
+    nav > ul.mobile_menu > li{
+        padding: 0 10px;
+    }
+    }
 /* Home column */
+@media only screen and (min-width: 1070px) {
 .home_cta{
     width: 100%;
     display: flex;
@@ -113,7 +162,85 @@ nav > ul > li > a > button:hover{
     color: #B191FF;
     font-weight: bold;
 }
+}
+@media only screen and (max-width: 1069px) {
+    .home_cta{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: calc(100vh - 180px);
+        padding: 0 6vw;
+    }
+    .home_column_two > img{
+        width: 100%;
+        border-radius: 70%;
+    }
+    .home_column_two{
+        width: 50%;
+    }
+    .about_me{
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .title_name{
+        margin-bottom: 20px;
+    }
+    .design_name{
+        color: #B191FF;
+        font-weight: bold;
+    }
+    }
+    @media only screen and (max-width: 850px) {
+        .home_cta{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: calc(100vh -80px);
+            padding: 0 6vw;
+        }
+        .home_column_two > img{
+            width: 100%;
+            border-radius: 70%;
+        }
+        .home_column_two{
+            width: 50%;
+        }
+        .about_me{
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .title_name{
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .title_name >.my_name{
+            font-size: 2rem;
+        }
+        .socials{
+            display: flex;
+            justify-content: center;
+        }
+        .design_name{
+            color: #B191FF;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        .col_title{
+            background-color: #E7D7C1;
+            height: auto;
+            color: #242F40;
+            text-align: center;
+            padding: 20px 20px 0 20px;
+        }
+        }
 /* skills */
+@media only screen and (min-width: 1392px) {
 p.serv_colhead{
     text-align: center;
 }
@@ -221,4 +348,221 @@ p.serv_colhead{
 }
 .subs_form{
     width: 45%;
+}
+}
+@media only screen and (max-width: 1391px) {
+    p.serv_colhead{
+        text-align: center;
+    }
+    .col_title{
+        background-color: #E7D7C1;
+        height: auto;
+        color: #242F40;
+        padding: 20px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .develop,.support{
+        width: 45%;
+        color: #e4c465;
+        text-align: center;
+        border: 1px solid #242F40;
+        margin: 50px 30px;
+        padding: 10px 20px;
+        font-weight: bold;
+    
+    }
+    .develop{
+        background-image: url(/assets/skills_column.jpg);
+    }
+    .support{
+        background-image: url(/assets/skills_column.jpg);
+    }
+    .ts,.wpdev{
+        background-color: rgba(202, 202, 202, 0.623);
+        padding: 120px 20px;
+        width: 100%;
+    }
+    .serv_title{
+        width: 30%;
+        text-align: center;
+    }
+    .s_col1{
+        display: flex;
+    }
+    .s_bg{ 
+        width: 70%;
+    
+        padding: 20px;
+    }
+    /* Skills */
+    .skills_progress{
+        padding: 50px;
+        display: flex;
+        background-color: #80A4ED;
+    }
+    .professional{
+        width: 50%;
+    }
+    .people{
+        width: 50%;
+    }
+    .people_skills_li > ul{
+        padding: 0;
+        columns: 2;
+    }
+    .people_skills_li > ul > li{
+        padding: 20px 0;
+        font-weight: bold;
+    }
+    .prof_skills,.people_skills{
+        padding-bottom: 20px;
+        color: #E7D7C1;
+    }
+    .meter { 
+        height: 5px;
+        position: relative;
+        background: #e4c465;
+        overflow: hidden;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    .meter span {
+        display: block;
+        height: 100%;
+    }
+    
+    .progress {
+        background-color: #471ead;
+    }
+    
+    .progress_anim{
+        animation: progressBar 3s ease-in-out;
+        animation-fill-mode:both; 
+    }
+    @keyframes progressBar {
+    0% { width: 0; }
+        100% { width: 100%; }
+    }
+    .subscribe{
+        background-color: #242F40;
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .subs_form{
+        width: 45%;
+    }
+    }
+/* skills */
+@media only screen and (max-width: 847px) {
+p.serv_colhead{
+    text-align: center;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.develop,.support{
+    width: 100vw;
+    color: #e4c465;
+    text-align: center;
+    border: 1px solid #242F40;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+.develop{
+    background-image: url(/assets/skills_column.jpg);
+}
+.support{
+    background-image: url(/assets/skills_column.jpg);
+}
+.ts,.wpdev{
+    background-color: rgba(202, 202, 202, 0.623);
+    padding: 120px 20px;
+    width: 100%;
+}
+.serv_title{
+
+    display: none;
+}
+.s_col1{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.s_bg{ 
+    width: 100%;
+
+    padding: 20px;
+}
+/* Skills */
+.skills_progress{
+    padding: 50px;
+    display: flex;
+    background-color: #80A4ED;
+}
+.professional{
+    width: 50%;
+}
+.people{
+    width: 50%;
+}
+.people_skills_li > ul{
+    padding: 0;
+    columns: 2;
+}
+.people_skills_li > ul > li{
+    padding: 20px 0;
+    font-weight: bold;
+}
+.prof_skills,.people_skills{
+    padding-bottom: 20px;
+    color: #E7D7C1;
+}
+.meter { 
+    height: 5px;
+    position: relative;
+    background: #e4c465;
+    overflow: hidden;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: #471ead;
+}
+
+.progress_anim{
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+@keyframes progressBar {
+0% { width: 0; }
+    100% { width: 100%; }
+}
+.subscribe{
+    background-color: #242F40;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.subs_form{
+    width: 45%;
+}
 }
