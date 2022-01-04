@@ -498,7 +498,7 @@ p.serv_colhead{
         }
         .people_skills_li > ul{
             padding: 0;
-            columns: 0;
+            columns: 1;
         }
         .people_skills_li > ul > li{
             padding: 20px 0;
