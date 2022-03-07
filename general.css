@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    cursor: url(assets/mouse.png),auto;
+    cursor: pointer;
     list-style-type: none;
     margin: 0;
     font-family: 'Poppins', sans-serif;

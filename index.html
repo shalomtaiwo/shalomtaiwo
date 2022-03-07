@@ -37,7 +37,7 @@
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="#skills">What I do</a></li>
                     <li><a href="#plugins">Plugins</a></li>
-                    <li id="contact_pop_up" ><a href="#contact"><button>Contact me</button></a></li>
+                    <li id="contact_pop_up" ><button>Contact me</button></li>
                 </ul>
                 <ul class="mobile_menu">
                     <li><a href="/index.html">Home</a></li>
@@ -60,10 +60,10 @@
                         <p class="about_me">Web developer with a love for WordPress and a passion for simplicity.
                             I am always developing and motivated to create meaningful work.</p>
                         <div class="socials">
-                            <a href="https://twitter.com/taiwo_shalom class="twitter"><i class="fab fa-twitter fa-1x"></i></a>
+                            <a href="https://twitter.com/taiwo_shalom" class="twitter"><i class="fab fa-twitter fa-1x"></i></a>
                             <a href="https://www.linkedin.com/in/shalom-taiwo-959710160/" class="linkedin"><i class="fab fa-linkedin-in fa-1x"></i></a>
                             <a href="https://profiles.wordpress.org/shalomt/" class="wordpress"><i class="fab fa-wordpress fa-1x"></i></a>
-                            <a class="email" href="mailto:info@shalomt.me?cc=tshalom01@gmail.com&subject=I%20need%20help%20with&body=Hello%20Shalom%2C%0D%0A%0D%0AMy%20name%20is%20_%20.%20I%20am%20contacting%20you%20because"><i class="fas fa-envelope fa-1x"></i></a>
+                            <a class="email" href="mailto:info@shalomt.com?cc=tshalom01@gmail.com&subject=I%20need%20help%20with&body=Hello%20Shalom%2C%0D%0A%0D%0AMy%20name%20is%20_%20.%20I%20am%20contacting%20you%20because"><i class="fas fa-envelope fa-1x"></i></a>
                         </div>
                     </div>
                     <div class="home_column_two">
@@ -149,12 +149,12 @@
                         </p>
                         </div>
                         <div class="wbps_links">
-                        <button class="wbps_doc_link1">Coming soon</button>
-                        <button class="wbps_doc_link2"><a href="https://wpbpreview.com/">View Website</a></button>
+                        <a href="https://wordpress.org/plugins/book-preview-for-woocommerce/"><button class="wbps_doc_link1">Download here</button></a>
+                        <a href="https://shalomt.com/plugins/wpbookpreview/"><button class="wbps_doc_link2">View Website</button></a>
                         </div>
                     </div>
                     <div class="wbps_logo">
-                        <a href="./wbps.html" class="wbps_logo_"><img src="./assets/woocommerce_book_preview.png" alt="" srcset=""></a>
+                        <a href="#plugins" class="wbps_logo_"><img src="./assets/woocommerce_book_preview.png" alt="" srcset=""></a>
                     </div>
                 </div>
             </div>
@@ -176,31 +176,29 @@
             <div class="contact_bg">
             <div class="contact_details">
                 <div class="contact_options">
-                    <p class="cf_email"><i class="fas fa-envelope fa-2x"></i><a href="mailto:info@shalomt.me">info@shalomt.me</a></p>
+                    <p class="cf_email"><i class="fas fa-envelope fa-2x"></i><a href="mailto:info@shalomt.me">info@shalomt.com</a></p>
+                    <p class="cf_github"><i class="fab fa-github fa-2x"></i><a href="https://github.com/shalomtaiwo" target="_blank" rel="noopener noreferrer">Shalomtaiwo</a></p>
                     <p class="cf_wordpress"><i class="fab fa-wordpress fa-2x"></i><a href="https://profiles.wordpress.org/shalomt/" target="_blank" rel="noopener noreferrer">@Shalomt</a></p>
                     <p class="cf_twitter"><i class="fab fa-twitter fa-2x"></i><a href="https://twitter.com/taiwo_shalom" target="_blank" rel="noopener noreferrer">@taiwo_shalom</a></p>
                     <p class="cf_linkedin"><i class="fab fa-linkedin-in fa-2x"></i><a href="https://www.linkedin.com/in/shalom-taiwo-959710160/" target="_blank" rel="noopener noreferrer">Shalom Taiwo</a></p>
                 </div>
                 <div class="contact_form">
                     <h1>Send Me a Message</h1>
-                    <form name="contact" id="my-form" netlify-honeypot="bot-field" method="POST" data-netlify="true">
-                        <p class="hidden">
-                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    <form name="contact" action="https://send.pageclip.co/tKczHfTD79GkjVMF4dQ5lz279qNSzxcD/ContactForm" id="my-form" class="pageclip-form" method="POST">
+                        <p>
+                        <label>Your Name: <input type="text" name="name" required/></label>   
                         </p>
                         <p>
-                        <label>Your Name: <input type="text" name="name" /></label>   
+                        <label>Your Email: <input type="email" name="email" required/></label>
                         </p>
                         <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
+                            <label>Subject: <input type="text" name="subject" required/></label>
                         </p>
                         <p>
-                            <label>Subject: <input type="text" name="subject" /></label>
+                        <label>Message: <textarea rows="5" name="message" required></textarea></label>
                         </p>
                         <p>
-                        <label>Message: <textarea rows="5" name="message"></textarea></label>
-                        </p>
-                        <p>
-                        <button type="submit">Send Message</button>
+                        <button type="submit" class="button pageclip-form__submit--dark-loader"><span>Send Message</span></button>
                         </p>
                     </form>
                 </div>
@@ -213,9 +211,6 @@
         </footer>
         <script src="script.js" async defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25422389.js"></script>
-<!-- End of HubSpot Embed Code -->
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
     </body>
