@@ -31,8 +31,18 @@
     font-weight: lighter;
 }
 /******************** Header *******************/
+.desktop-nav{
+    justify-content: end !important;
+}
+.btn-contact{
+    background-color: #471ead !important;
+    color: white !important;
+}
+.btn-contact-link{
+    text-decoration:  none !important;
+}
 /* Logo */
-@media only screen and (min-width: 750px) {
+/* @media only screen and (min-width: 750px) {
 
 
 
@@ -41,9 +51,9 @@
     }
     .logo{
         height: 50px;
-    }
+    } */
     /* Nav */
-    header{
+    /* header{
         width: 100vw;
         position: fixed;
         display: flex;
@@ -82,9 +92,9 @@
     }
     .logo{
         height: 50px;
-    }
+    } */
     /* Nav */
-    header{
+    /* header{
         width: 100vw;
         position: fixed;
         display: flex;
@@ -114,7 +124,7 @@
     nav > ul.mobile_menu > li{
         padding: 0 10px;
     }
-    }
+    } */
 /* Home column */
 @media only screen and (min-width: 1070px) {
 .home_cta{
@@ -311,7 +321,7 @@ p.serv_colhead{
 }
 
 .progress {
-    background-color: #471ead;
+    background-color: #471ead !important;
 }
 
 .progress_anim{
