@@ -4,11 +4,11 @@
 *:focus{outline:0;}
 
 .subs-button{
-	background-color:#80A4ED;
+	background-color:#00e5f2;
 	border:0;
 	padding:10px 0px;
 	width:90px;
-	color:white;
+	color:black;
 	cursor:pointer;
 	position:relative;
 	transition:0.4s all;
@@ -64,7 +64,7 @@
 
 
 #subs-bg{
-    background-color: #242F40;
+    background-color: #041c1d;
     height: auto;
     width: 100%;
     display: flex;

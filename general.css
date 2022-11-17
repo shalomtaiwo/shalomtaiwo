@@ -28,7 +28,7 @@ input,textarea{
     border-radius: 4px;
 }
 a:hover{
-    color: #B191FF;
+    color: #00f6f6;
 }
 header{
     z-index: 1;
@@ -40,9 +40,10 @@ main{
 footer{
     height: 12vh;
     width: 100%;
-    background-color: #80A4ED;
+    background-color: #004d5f;
     display: flex;
     align-items: center;
+    color: white;
     justify-content: center;
 }
 .email-marketing-by-b{
